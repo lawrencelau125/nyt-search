@@ -30,3 +30,23 @@ $.ajax({
 }).fail(function(err) {
 	throw err;
 });
+
+// Results Data
+var results = result.param;
+                //--------------------------------
+
+                for (var i = 0; i < results.length; i++) {
+
+                  var counter = 1
+
+                    var searhResults = $('<div>');
+
+                    var p = $('<p>').text(results[i].response.headline.main);
+                    		$('<p>').text(results[i].response.byline);
+                    		$('<p>').text("Section:  " + results[i].response.section_name);
+                    		$('<p>').text(results[i].response.pub_date);
+                    		$('<p>').text(results[i].response.web_url);
+                    
+
+                    .append();
+                    .append();
