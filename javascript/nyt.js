@@ -39,14 +39,17 @@ var results = result.response.docs;
                     var searhResults = $('<div>');
 
                     var p = $('<p>').text(results[i].headline.main);
-                    		$('<p>').text(results[i].byline);
-                    		$('<p>').text("Section:  " + results[i].section_name);
-                    		$('<p>').text(results[i].pub_date);
-                    		$('<p>').text(results[i].web_url);
+                    var q =	$('<p>').text(results[i].byline.original);
+                    var r = $('<p>').text("Section:  " + results[i].section_name);
+                    var s =	$('<p>').text(results[i].pub_date);
+                    var t =	$('<p>').text(results[i].web_url);
                     
 
                     $(".panel-body").append(p);
-                    // .append();
+                    $(".panel-body").append(q);
+                    $(".panel-body").append(r);
+                    $(".panel-body").append(s);
+                    $(".panel-body").append(t);
                 }
 
 	console.log(result);
